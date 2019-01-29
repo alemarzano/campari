@@ -143,6 +143,14 @@ footer .footer p {
 }
 
 @media screen and (min-width:1024px) {
+    #sticky-bar li {
+        padding: 10px 0
+    }
+
+    #sticky-bar li a {
+        padding: 15px 10px;
+    }
+
     .top {
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
