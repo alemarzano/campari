@@ -13,5 +13,9 @@ $(function () {
 });
 
 
-$('#age').modal('show');
+$('#age').modal({
+    backdrop: 'static',
+    keyboard: false,
+    show:true
+})
 
