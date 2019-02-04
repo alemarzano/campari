@@ -737,7 +737,9 @@ h3 {
 }
 .loop .owl-nav {   
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    margin-top:20px;
+
 }
 /* .loop .owl-nav button {
     position:absolute;
@@ -760,9 +762,12 @@ h3 {
     background-color: rgba(128, 10, 27, 0.7);
     overflow:hidden;
 }
-.loop .center .item .overlay,
-.loop div.active:first-of-type .item .overlay {
+.loop .center .item .overlay {
     opacity: 1;
+}
+
+.overlay-active {
+    opacity:1
 }
 
 

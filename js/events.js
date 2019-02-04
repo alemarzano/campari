@@ -56,8 +56,8 @@ $(document).ready(function(){
     // Carousel //
 
     $('.loop').owlCarousel({
-       
-        items: 2,
+        center: true,
+        items:1,
         loop: true,
         margin: 10,
         nav:true,
@@ -65,11 +65,21 @@ $(document).ready(function(){
         navText: ["<img src='img/left.png'>", "<img src='img/right.png'>"],
         responsive: {
             600: {
-                center: true,
                 items: 4,  
                 nav:true,              
             }
         }
     });
+
+    var _owl = $('.loop .active').first();    
+    var _owlactive = _owl.find('.overlay');
+    _owlactive.addClass('overlay-active');
+
+    // $('.owl-nav button').click(function(){
+    //     _owlactive.removeClass('overlay-active');
+    //     _owlactive.addClass('overlay-active');
+    //     return false;
+    // });
+     
 
 })
