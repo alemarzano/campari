@@ -71,15 +71,24 @@ $(document).ready(function(){
         }
     });
 
-    var _owl = $('.loop .active').first();    
-    var _owlactive = _owl.find('.overlay');
-    _owlactive.addClass('overlay-active');
+    // Check if element is scrolled into view
+    function isScrolledIntoView(elem) {
+        var docViewTop = $(window).scrollTop();
+        var docViewBottom = docViewTop + $(window).height();
 
-    // $('.owl-nav button').click(function(){
-    //     _owlactive.removeClass('overlay-active');
-    //     _owlactive.addClass('overlay-active');
-    //     return false;
-    // });
+        var elemTop = $(elem).offset().top;
+        var elemBottom = elemTop + $(elem).height();
+
+        return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+    }
+    // If element is scrolled into view, fade it in
+    $(window).scroll(function () {
+        $('.scroll-behind .animated').each(function () {
+            if (isScrolledIntoView(this) === true) {
+                $(this).addClass('fadeInLeft');
+            }
+        });
+    });
      
 
 })

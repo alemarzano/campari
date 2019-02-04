@@ -407,8 +407,8 @@ footer .footer p {
 
     .video .close {
         position: absolute;
-        right: -30px;
-        top: 0;
+        right: -10px;
+        top: -30px;
         z-index: 999;
         font-size: 2rem;
         font-weight: normal;
@@ -481,9 +481,6 @@ p {
     box-shadow: 0 0 8px rgba(0, 0, 0, .7);
 }
 
-#slide2 img:last-of-type {
-    transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
-}
 
 .slide:before {
     content: "";
@@ -524,15 +521,8 @@ p {
     transform: translateZ(-1px) scale(2);
 }
 
-#slide2 {
-    background-image: url("https://lorempixel.com/640/480/abstract/3/");
-    z-index: 2;
-}
 
-#slide3:before {
-    background-image: url("https://lorempixel.com/640/480/abstract/5/");
-    transform: translateZ(-1px) scale(2);
-}
+
 
 #slide4 {
     background: #222;
@@ -770,10 +760,106 @@ h3 {
     opacity:1
 }
 
+/*---------------
+    BEHINDS
+---------------*/
 
 
-/* .loop img  {filter:brightness(.7)}
-.loop .center img {filter:brightness(1)} */
+#slide2 {
+    background: linear-gradient(180deg, #CC0505 7.41%, #780202 100%);
+    z-index: 2;
+    box-shadow: none;
+    -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+}
+
+.behind {
+    width:100%;
+    height:206px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: auto;
+    position:relative;
+    margin-bottom:10px;
+}
+.vertical::after {
+    content: url(../img/spoon_v.png);
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.behind .overlay {
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     opacity: 0;
+     transition: .5s ease;
+     background-color: rgba(128, 10, 27, 0.7);
+     overflow:hidden;
+     z-index:1;
+}
+
+.behind:hover .overlay {
+    opacity: 1;
+}
+
+.behind button {z-index:10;}
+.b-1{
+    background-image: url(../img/behind_1.jpg);
+}
+.b-2{
+    background-image: url(../img/behind_2.jpg);
+}
+.b-3{
+    background-image: url(../img/behind_3.jpg);
+    height:446px;
+}
+
+/*---------------
+    COCKTAILS
+---------------*/
+
+#slide3:before {
+    background: #121C25;
+    transform: translateZ(-1px) scale(2);
+}
+#slide3 .vertical::after{
+    content:url(../img/spoon_vb.png);
+    display: block;
+    margin:auto;
+    text-align: center;
+}
+
+.tab-header {
+    max-width:300px;
+    overflow: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding:0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.tab-header li {
+    list-style: none;
+    width: 146px;
+    border: 1px solid #124E83;
+}
+
+.tab-header li img {
+    align-self: center;
+    max-width: 100%;
+}
+
+
+
+
 @media screen and (min-width:768px) {
     .navbar-expand-md .navbar-collapse {
         justify-content: flex-end;
