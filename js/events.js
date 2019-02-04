@@ -1,3 +1,4 @@
+$(document).click(function (e) {
 
 $(function () {
     var sticky = $("#sticky-bar");
@@ -13,9 +14,62 @@ $(function () {
 });
 
 
-$('#age').modal({
-    backdrop: 'static',
-    keyboard: false,
-    show:true
-})
+// $('#age').modal({
+//     backdrop: 'static',
+//     keyboard: false,
+//     show:true
+// });
 
+// CLOSE MENU //
+
+if (!$(e.target).is('.navbar-collapse')) {
+    $('.collapse').collapse('hide');
+};
+
+});
+
+$(document).ready(function(){
+    // Videos
+
+    var $videoSrc;
+    $('.video-btn').click(function () {
+        $videoSrc = $(this).data("src");
+    });
+    console.log($videoSrc);
+
+
+
+    // when the modal is opened autoplay it  
+    $('#videoModal').on('shown.bs.modal', function (e) {
+
+        // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+        $("#video").attr('src', $videoSrc);
+    })
+
+
+    // stop playing the youtube video when I close the modal
+    $('#videoModal').on('hide.bs.modal', function (e) {
+        // a poor man's stop video
+        $("#video").attr('src', $videoSrc);
+    })
+
+    // Carousel //
+
+    $('.loop').owlCarousel({
+       
+        items: 2,
+        loop: true,
+        margin: 10,
+        nav:true,
+        dots:false,
+        navText: ["<img src='img/left.png'>", "<img src='img/right.png'>"],
+        responsive: {
+            600: {
+                center: true,
+                items: 4,  
+                nav:true,              
+            }
+        }
+    });
+
+})
