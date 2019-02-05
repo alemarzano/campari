@@ -1,14 +1,13 @@
-
 // $(window).load(function () {
 //     $('.loader-box').fadeOut();
 // });
 
-$(document).ready(function(){
+$(document).ready(function () {
 
-      setTimeout(function () {
-          $('body').addClass('loaded');
-          $('h1').css('color', '#222222');
-      }, 3000);
+    setTimeout(function () {
+        $('body').addClass('loaded');
+        $('h1').css('color', '#222222');
+    }, 3000);
 
     // Videos
     var $videoSrc;
@@ -37,19 +36,19 @@ $(document).ready(function(){
 
     $('.loop').owlCarousel({
         center: true,
-        items:1,
+        items: 1,
         loop: true,
         margin: 10,
-        nav:true,
-        dots:false,
+        nav: true,
+        dots: false,
         navText: ["<img src='img/left.png'>", "<img src='img/right.png'>"],
         responsive: {
             600: {
-                items: 2,  
-                nav:true,              
+                items: 2,
+                nav: true,
             },
             1024: {
-                items: 4,
+                items: 2,
                 nav: true,
             }
         }
@@ -73,7 +72,7 @@ $(document).ready(function(){
             }
         });
     });
-     // owl bartenders
+    // owl bartenders
     $(".owl-bartenders").owlCarousel({
         items: 1,
         loop: true,
@@ -81,9 +80,9 @@ $(document).ready(function(){
         autoplay: true,
         autoplayTimeout: 3000,
         autoplayHoverPause: true,
-        autoHeight:true
+        autoHeight: true
     });
-    
+
     // owl-tabs
     $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
         e.target // newly activated tab
@@ -91,11 +90,11 @@ $(document).ready(function(){
         $(".owl-bartenders").trigger('refresh.owl.carousel');
     });
 
-     $('#age').modal({
-         backdrop: 'static',
-         keyboard: false,
-         show: true
-     });
+    $('#age').modal({
+        backdrop: 'static',
+        keyboard: false,
+        show: true
+    });
 
 });
 
@@ -115,12 +114,18 @@ $(document).click(function (e) {
     });
 
 
-    
+
 
     // CLOSE MENU //
 
     if (!$(e.target).is('.navbar-collapse')) {
         $('.collapse').collapse('hide');
     };
+    $('#menu li').click(function () {
+        var $this = $(this);
+        $('#menu li').removeClass('active');
+        $this.addClass('active');
+    });
+
 
 });

@@ -35,16 +35,16 @@
 
     <div class="loader-box">
         <div class="loader">
-            
+
             <div class="element-animation">
                 <img src="img/preloader.png" width="480" height="100" ;>
             </div>
         </div>
         <ul class="labels">
-            <li class="label">Enfriar...</li>
-            <li class="label">Servir...</li>
-            <li class="label">Mezclar...</li>
-            <li class="label">Disfrutar</li>
+            <li class="label">Gin</li>
+            <li class="label">Campari</li>
+            <li class="label">Vermouth Rosso</li>
+            <li class="label">Rodaja de Naranja</li>
         </ul>
         <div class="loader-section section-left"></div>
         <div class="loader-section section-right"></div>
@@ -58,9 +58,9 @@
                 <img src="img/menu.svg" alt="">
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav">
+                <ul id="menu" class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#title">Cortos </a>
+                        <a class="nav-link" href="#title">Corto </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#slide1">Actores</a>
@@ -89,24 +89,19 @@
         <div id="title" class="slide contenedores">
             <div class="container">
                 <img class="logo" src="img/logo_w.png" alt="">
-                <div class="train">
-                    <div class="train-clip clip-1 animated slideInLeft delay-1"></div>
-                    <div class="train-clip clip-2 animated slideInRight delay-1 d-flex justify-content-center">
-                        <button type="button" class="btn video-btn mt-3" data-toggle="modal" data-src="https://www.youtube.com/embed/xC93AYiC4kQ"
-                            data-target="#videoModal">
-                            <img src="img/play.svg" alt="">
-                        </button>                    
-                    </div>
-                    <div class="train-clip clip-3 animated slideInLeft delay-1"></div>
-                </div>
-                <h3>ENTERING RED</h3>
 
-                <!-- <div id="cortos" class="false-button f-1 pt-5">
-                    <button type="button" class="btn video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/sLcnQI1pPEY"
-                        data-target="#videoModal">
-                        <img src="img/play.png" alt="">
-                    </button>
-                </div> -->
+                <div class="train">
+                    <h3>VER CORTO ENTERING RED</h3>
+                    <div id="cortos" class="false-button f-1 pt-5">
+                        <button type="button" class="btn video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/xC93AYiC4kQ"
+                            data-target="#videoModal">
+                            <img src="img/play.png" alt="">
+                        </button>
+                    </div>
+                </div>
+
+
+
 
                 <img src="img/bottles.png" alt="">
             </div>
@@ -119,31 +114,7 @@
                     <h3>ACTORES</h3>
                 </div>
                 <div class="row mx-auto w-100">
-                    <div class="col-12 p-0">
-                        <div class="actores">
-                            <div class="character a-1">
-                                <button type="button" class="btn video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/9h56hlHWBFk"
-                                    data-target="#videoModal">
-                                    <img src="img/play.png" alt="">
-                                </button>
-                                <img class="sub" src="img/seba_sub.png" alt="">
-                            </div>
-                            <div class="description">
-                                <div class="name">
-                                    <h3>SEBA GARCÍA</h3>
-                                    <h6>BARTENDER</h6>
-                                    <p>Seba es un joven bartender, manager de Presidente Bar y amante de los cocktails
-                                        clásicos.Es uno
-                                        de los
-                                        más de la nueva generación de bartenders en Argentina.</p>
-                                </div>
-                                <ul class="redes">
-                                    <!-- <li><a target="_blank" href=""><i class="fab fa-facebook-f"></i></a></li> -->
-                                    <li><a target="_blank" href="https://www.instagram.com/soyelcantinero/"><i class="fab fa-instagram"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+
                     <div class="col-12">
                         <div class="actores reverse">
                             <div class="character a-2">
@@ -169,7 +140,32 @@
                             </div>
                         </div>
                     </div>
-                    
+                    <div class="col-12 p-0">
+                        <div class="actores">
+                            <div class="character a-1">
+                                <button type="button" class="btn video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/9h56hlHWBFk"
+                                    data-target="#videoModal">
+                                    <img src="img/play.png" alt="">
+                                </button>
+                                <img class="sub" src="img/seba_sub.png" alt="">
+                            </div>
+                            <div class="description">
+                                <div class="name">
+                                    <h3>SEBA GARCÍA</h3>
+                                    <h6>BARTENDER</h6>
+                                    <p>Seba es un joven bartender, manager de Presidente Bar y amante de los cocktails
+                                        clásicos.Es uno
+                                        de los
+                                        más de la nueva generación de bartenders en Argentina.</p>
+                                </div>
+                                <ul class="redes">
+                                    <!-- <li><a target="_blank" href=""><i class="fab fa-facebook-f"></i></a></li> -->
+                                    <li><a target="_blank" href="https://www.instagram.com/soyelcantinero/"><i class="fab fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
             <div class="gallery">
@@ -183,7 +179,7 @@
                         <div class="overlay h-100 w-100"></div>
                         <img src="img/gallery/gallery_2.jpg" alt="">
                     </div>
-                    
+
                     <div class="item">
                         <div class="overlay h-100 w-100"></div>
                         <img src="img/gallery/gallery_4.jpg" alt="">
@@ -220,7 +216,7 @@
                         <div class="overlay h-100 w-100"></div>
                         <img src="img/gallery/gallery_12.jpg" alt="">
                     </div>
-                    
+
 
                 </div>
             </div>
@@ -247,14 +243,14 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6 p-0 p-md-3 d-flex flex-column justify-content-between">
-                        <div class="behind b-1">
+                        <div class="behind b-2">
                             <button type="button" class="btn video-btn animated " data-toggle="modal" data-src="https://www.youtube.com/embed/XOVr8405gC4"
                                 data-target="#videoModal">
                                 <img src="img/play.png" alt="">
                             </button>
                             <div class="overlay"></div>
                         </div>
-                        <div class="behind b-2">
+                        <div class="behind b-1">
                             <button type="button" class="btn video-btn animated " data-toggle="modal" data-src="https://www.youtube.com/embed/Y_JbM4_AxUs"
                                 data-target="#videoModal">
                                 <img src="img/play.png" alt="">
@@ -263,8 +259,8 @@
                         </div>
                     </div>
                 </div>
-                
-                
+
+
             </div>
         </div>
 
@@ -276,15 +272,16 @@
                 <div class="cocktails">
                     <ul class="tab-header nav nav-tabs" role="tablist">
                         <li role="presentation">
+                            <a href="#seba" aria-controls="#seba" role="tab" data-toggle="tab" class="active">
+                                <img src="img/cocktail_2.png" alt="">
+                            </a>
+                        </li>
+                        <li role="presentation">
                             <a href="#andreas" aria-controls="#andreas" role="tab" data-toggle="tab">
                                 <img src="img/cocktail_1.png" alt="">
                             </a>
                         </li>
-                        <li role="presentation">
-                            <a href="#seba" aria-controls="#seba" role="tab" data-toggle="tab">
-                                <img src="img/cocktail_2.png" alt="">
-                            </a>
-                        </li>
+
                         <li role="presentation">
                             <a href="#jessica" aria-controls="#jessica" role="tab" data-toggle="tab">
                                 <img src="img/cocktail_3.png" alt="">
@@ -307,7 +304,49 @@
                         </li>
                     </ul>
                     <div class="tab-content">
-                        <div role="tabpanel" class="tab-pane active" id="andreas">
+                        <div role="tabpanel" class="tab-pane active" id="seba">
+                            <div class="row mx-auto w-100">
+                                <div class="col-12 col-lg-4 p-0">
+                                    <div class="trago">
+                                        <img src="img/bartenders/campari_seba_bianco_a_cut.png" alt="">
+                                        <h6 class="text-white">PRESIDENTE NEGRONI</h6>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-8 p-0">
+                                    <div class="bartender">
+                                        <div class="foto">
+                                            <div class="owl-carousel owl-bartenders owl-theme">
+                                                <div class="item" style="background-image:url('img/bartenders/seba_a.jpg')">
+                                                </div>
+                                                <div class="item" style="background-image:url('img/bartenders/seba_b.jpg')">
+                                                </div>
+                                                <div class="item" style="background-image:url('img/bartenders/seba_c.jpg')">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="bartender-txt">
+                                            <h3 class="name text-white">SEBA GARCIA</h3>
+                                            <p class="paragraph text-white">“Un cóctel debe ser elegante, como un
+                                                presidente. Debe tener estilo. Debe emanar la fuerza de un ...
+                                                Presidente.”</p>
+                                            <ul class="ingredientes p-0 text-white">
+                                                <h5 class="text-white">Ingredientes</h5>
+                                                <li>30 ml Campari</li>
+                                                <li>30 ml Barrel Aged Genever</li>
+                                                <li>15 ml Medium Sherry</li>
+                                                <li>15 ml Barolo Chinato</li>
+                                            </ul>
+                                            <h5 class="text-white">Sabor</h5>
+                                            <p class="paragraph text-white">
+                                                Cítricos y hierbas.
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="andreas">
                             <div class="row mx-auto w-100">
                                 <div class="col-12 col-lg-4 p-0">
                                     <div class="trago">
@@ -483,48 +522,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div role="tabpanel" class="tab-pane " id="seba">
-                            <div class="row mx-auto w-100">
-                                <div class="col-12 col-lg-4 p-0">
-                                    <div class="trago">
-                                        <img src="img/bartenders/campari_seba_bianco_a_cut.png" alt="">
-                                        <h6 class="text-white">PRESIDENTE NEGRONI</h6>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-lg-8 p-0">
-                                    <div class="bartender">
-                                        <div class="foto">
-                                            <div class="owl-carousel owl-bartenders owl-theme">
-                                                <div class="item" style="background-image:url('img/bartenders/seba_a.jpg')">
-                                                </div>
-                                                <div class="item" style="background-image:url('img/bartenders/seba_b.jpg')">
-                                                </div>
-                                                <div class="item" style="background-image:url('img/bartenders/seba_c.jpg')">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="bartender-txt">
-                                            <h3 class="name text-white">SEBA GARCIA</h3>
-                                            <p class="paragraph text-white">“Un cóctel debe ser elegante, como un
-                                                presidente. Debe tener estilo. Debe emanar la fuerza de un ...
-                                                Presidente.”</p>
-                                            <ul class="ingredientes p-0 text-white">
-                                                <h5 class="text-white">Ingredientes</h5>
-                                                <li>30 ml Campari</li>
-                                                <li>30 ml Barrel Aged Genever</li>
-                                                <li>15 ml Medium Sherry</li>
-                                                <li>15 ml Barolo Chinato</li>
-                                            </ul>
-                                            <h5 class="text-white">Sabor</h5>
-                                            <p class="paragraph text-white">
-                                                Cítricos y hierbas.
-                                            </p>
 
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                         <div role="tabpanel" class="tab-pane " id="stacy">
                             <div class="row mx-auto w-100">
                                 <div class="col-12 col-lg-4 p-0">
@@ -581,13 +579,13 @@
                 <img src="img/campari.png" alt="">
                 <p class="disclaim">Beber con moderación. <br> Prohibida su venta a menores de 18 años</p>
             </div>
-        </footer >
+        </footer>
 
 
     </div>
 
 
-    
+
 
     <!-- Button trigger modal -->
 
