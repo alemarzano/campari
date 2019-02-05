@@ -1,36 +1,16 @@
-$(document).click(function (e) {
 
-$(function () {
-    var sticky = $("#sticky-bar");
-    $(window).scroll(function () {
-        var scroll = $(window).scrollTop();
-
-        if (scroll >= 100) {
-            sticky.removeClass('rojo').addClass("blanco");
-        } else {
-            sticky.removeClass("blanco").addClass('rojo');
-        }
-    });
-});
-
-
-// $('#age').modal({
-//     backdrop: 'static',
-//     keyboard: false,
-//     show:true
+// $(window).load(function () {
+//     $('.loader-box').fadeOut();
 // });
 
-// CLOSE MENU //
-
-if (!$(e.target).is('.navbar-collapse')) {
-    $('.collapse').collapse('hide');
-};
-
-});
-
 $(document).ready(function(){
-    // Videos
 
+      setTimeout(function () {
+          $('body').addClass('loaded');
+          $('h1').css('color', '#222222');
+      }, 3000);
+
+    // Videos
     var $videoSrc;
     $('.video-btn').click(function () {
         $videoSrc = $(this).data("src");
@@ -65,8 +45,12 @@ $(document).ready(function(){
         navText: ["<img src='img/left.png'>", "<img src='img/right.png'>"],
         responsive: {
             600: {
-                items: 4,  
+                items: 2,  
                 nav:true,              
+            },
+            1024: {
+                items: 4,
+                nav: true,
             }
         }
     });
@@ -107,4 +91,36 @@ $(document).ready(function(){
         $(".owl-bartenders").trigger('refresh.owl.carousel');
     });
 
-})
+     $('#age').modal({
+         backdrop: 'static',
+         keyboard: false,
+         show: true
+     });
+
+});
+
+$(document).click(function (e) {
+
+    $(function () {
+        var sticky = $("#sticky-bar");
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 100) {
+                sticky.removeClass('rojo').addClass("blanco");
+            } else {
+                sticky.removeClass("blanco").addClass('rojo');
+            }
+        });
+    });
+
+
+    
+
+    // CLOSE MENU //
+
+    if (!$(e.target).is('.navbar-collapse')) {
+        $('.collapse').collapse('hide');
+    };
+
+});
