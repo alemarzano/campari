@@ -89,6 +89,22 @@ $(document).ready(function(){
             }
         });
     });
-     
+     // owl bartenders
+    $(".owl-bartenders").owlCarousel({
+        items: 1,
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        autoHeight:true
+    });
+    
+    // owl-tabs
+    $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+        e.target // newly activated tab
+        e.relatedTarget // previous active tab
+        $(".owl-bartenders").trigger('refresh.owl.carousel');
+    });
 
 })
