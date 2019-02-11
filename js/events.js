@@ -4,10 +4,10 @@
 
 $(document).ready(function () {
 
-    setTimeout(function () {
-        $('body').addClass('loaded');
-        $('h1').css('color', '#222222');
-    }, 3000);
+    // setTimeout(function () {
+    //     $('body').addClass('loaded');
+    //     $('h1').css('color', '#222222');
+    // }, 3000);
 
     // Videos
     var $videoSrc;
@@ -41,7 +41,7 @@ $(document).ready(function () {
         margin: 10,
         nav: true,
         dots: false,
-        navText: ["<img src='img/left.png'>", "<img src='img/right.png'>"],
+        navText: ["<img src='/assets/img/left.png'>", "<img src='/assets/img/right.png'>"],
         responsive: {
             600: {
                 items: 2,
@@ -90,11 +90,11 @@ $(document).ready(function () {
         $(".owl-bartenders").trigger('refresh.owl.carousel');
     });
 
-    $('#age').modal({
-        backdrop: 'static',
-        keyboard: false,
-        show: true
-    });
+    // $('#age').modal({
+    //     backdrop: 'static',
+    //     keyboard: false,
+    //     show: true
+    // });
 
 });
 
@@ -126,6 +126,5 @@ $(document).click(function (e) {
         $('#menu li').removeClass('active');
         $this.addClass('active');
     });
-
 
 });

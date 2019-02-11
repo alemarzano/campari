@@ -252,6 +252,10 @@ button {
     box-shadow: 0 0 0 0.1rem rgba(109, 15, 15, 0.25);
 }
 
+.video-btn:focus {
+    box-shadow: none;
+
+}
 nav {
     background: linear-gradient(180deg, #D83636 0%, #D42B2B 100%);
 }
@@ -474,7 +478,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    /* overflow-y: scroll; */
+    overflow-y: hidden;
     overflow-x: hidden;
     height: 100%;
 
@@ -603,7 +607,7 @@ p {
 }
 
 .train {
-    padding-top: 40px;
+    padding-top: 30px;
     max-width: 830px;
     margin: auto;
 }
@@ -643,14 +647,64 @@ p {
 
 h3 {
     color: white;
-    font-size: 32px;
+    font-size: 49px;
     margin-top: 87px;
     margin-bottom: 33px;
+    transform: translateZ(0px) scale(1) translateX(0) translateY(0px) rotate(0);
 }
 
-#title h3 {
-    margin-top: 20px;
+.title-short {
+    margin-top: 10px;
+    /* width: 268px; */
+    margin: auto;
+    position: relative;
 }
+.title-short .name {
+    margin-top:0;
+    margin-bottom:10px;
+    line-height: 48px;
+    font-size: 55px;
+}
+
+.title-short i {
+    display: block;
+    margin:0 auto 10px;
+    padding-top: 10px;
+    /* margin-bottom: 10px;
+    margin-top:0; */
+    color:white;
+    font-size: 2.5rem;
+    
+}
+
+.title-short .cast {
+    width: 100%;
+    margin:10px auto;
+    display: flex;
+   
+}
+
+
+.cast-1, .cast-2 {
+    color: white;
+    width:50%;
+}
+.cast-1 {text-align: left;margin-left:10px;}
+.cast-2 {text-align: right;margin-right:10px;}
+.cast-1 h5,
+.cast-2 h5 {
+    font-size: 17px;
+    margin: 0 auto;
+    margin-top: 5px;
+    font-style: italic;
+}
+.cast-1 h6,
+.cast-2 h6 {
+    margin-bottom:0;
+    font-size: 12px;
+    font-style: italic;
+}
+
 
 .false-button {
     background-position: center;
@@ -908,6 +962,7 @@ h3 {
 .b-3 {
     background-image: url(../img/behind_3.jpg);
     height: 446px;
+    background-size: cover;
 }
 
 /*---------------
@@ -1098,7 +1153,24 @@ h3 {
     }
 
     .train {
-        padding-top: 360px;
+        padding-top: 330px;
+    }
+
+    .title-short {
+        width: 338px;
+        margin-bottom: 30px;
+    }
+
+    .title-short h3 {
+        font-size: 52px;
+    }
+
+    .title-short .cast {
+        margin-top: 15px;
+    }
+
+    .title-short .cast h5 {
+        font-size: 1.8em;
     }
 
     .false-button {
@@ -1172,7 +1244,7 @@ h3 {
 
 @media screen and (min-width:1024px) {
     #sticky-bar {
-        right: -2px;
+        right: 11px;
         left: inherit;
     }
 
@@ -1211,18 +1283,39 @@ h3 {
 
     /** LANDING **/
     #title .logo {
-        right: 1%;
-        top: 1%;
+        right: 2%;
+        top: 2%;
 
     }
 
     .train {
         max-width: 720px;
-        padding-top: 290px;
+        padding-top: 330px;
+    }
+
+    .title-short {
+        width:370px;
+    }
+
+    .title-short .name {
+        line-height: 64px;
+        font-size: 75px;
+    }
+    .title-short .cast {
+        margin-top:0;
+    }
+    .cast-1, .cast-2{margin:0;}
+    .title-short .cast h5 {font-size: 1.3em;}
+
+    .title-short h3 i {
+        opacity: 0.7;
     }
 
     .train-clip {
         height: 160px;
+    }
+    .title-section::after {
+        transform: rotate(90deg);
     }
 
     #slide1 .container,
