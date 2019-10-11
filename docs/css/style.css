@@ -474,7 +474,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    /* overflow-y: scroll; */
+    overflow-y: hidden;
     overflow-x: hidden;
     height: 100%;
 
@@ -603,7 +603,7 @@ p {
 }
 
 .train {
-    padding-top: 40px;
+    padding-top: 30px;
     max-width: 830px;
     margin: auto;
 }
@@ -646,10 +646,59 @@ h3 {
     font-size: 32px;
     margin-top: 87px;
     margin-bottom: 33px;
+    transform: translateZ(0px) scale(1) translateX(0) translateY(0px) rotate(0);
 }
 
-#title h3 {
-    margin-top: 20px;
+.title-short {
+    margin-top: 10px;
+    width: 268px;
+    margin: auto;
+}
+
+.title-short h3,
+.title-short h5 {
+    margin: 0
+}
+
+.title-short h3 i {
+    padding-top: 10px;
+}
+
+.title-short .cast {
+    margin-top: 10px;
+    width: 90%;
+    margin: auto;
+}
+
+
+.title-short .cast h5 {
+    color: white;
+}
+
+.title-short .cast h5 {
+    overflow: hidden;
+    text-align: center;
+}
+
+.title-short .cast h5:before,
+.title-short .cast h5:after {
+    background-color: #fff;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+
+.title-short .cast h5:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+
+.title-short .cast h5:after {
+    left: 0.5em;
+    margin-right: -50%;
 }
 
 .false-button {
@@ -908,6 +957,7 @@ h3 {
 .b-3 {
     background-image: url(../img/behind_3.jpg);
     height: 446px;
+    background-size: cover;
 }
 
 /*---------------
@@ -1098,7 +1148,24 @@ h3 {
     }
 
     .train {
-        padding-top: 360px;
+        padding-top: 330px;
+    }
+
+    .title-short {
+        width: 338px;
+        margin-bottom: 30px;
+    }
+
+    .title-short h3 {
+        font-size: 52px;
+    }
+
+    .title-short .cast {
+        margin-top: 15px;
+    }
+
+    .title-short .cast h5 {
+        font-size: 1.8em;
     }
 
     .false-button {
@@ -1162,7 +1229,7 @@ h3 {
     }
 
     .bartender .item {
-        height: 500px
+        height: 540px
     }
 
 }
@@ -1172,7 +1239,7 @@ h3 {
 
 @media screen and (min-width:1024px) {
     #sticky-bar {
-        right: -2px;
+        right: 11px;
         left: inherit;
     }
 
@@ -1218,7 +1285,11 @@ h3 {
 
     .train {
         max-width: 720px;
-        padding-top: 290px;
+        padding-top: 340px;
+    }
+
+    .title-short h3 i {
+        opacity: 0.7;
     }
 
     .train-clip {

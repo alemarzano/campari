@@ -127,5 +127,4 @@ $(document).click(function (e) {
         $this.addClass('active');
     });
 
-
 });
