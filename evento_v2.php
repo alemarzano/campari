@@ -14,53 +14,62 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,600|Roboto:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="./css/owl.carousel.min.css">
-    <link rel="stylesheet" href="./css/owl.theme.default.css">
-    <link rel="stylesheet" href="./css/animate.css">
-    <link rel="stylesheet" href="./css/preloader.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="<?=assets_url()?>css/owl.carousel.min.css">
+    <link rel="stylesheet" href="<?=assets_url()?>css/owl.theme.default.css">
+    <link rel="stylesheet" href="<?=assets_url()?>css/animate.css">
+    <link rel="stylesheet" href="<?=assets_url()?>css/preloader.css">
+    <link rel="stylesheet" href="<?=assets_url()?>css/style.css">
 
     <!-- FAVICON -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="<?=assets_url()?>img/favicon.ico" type="image/x-icon">
 
     <!-- META -->
     <meta property="og:title" content="Campari Red Diaries">
     <meta property="og:description" content="">
     <meta property="og:image" content="">
     <meta property="og:url" content="">
-
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-W3BC4TN');</script>
+    <!-- End Google Tag Manager -->
 </head>
 
 <body class="h-100">
-
-    <!-- <div class="loader-box">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W3BC4TN"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="loader-box">
         <div class="loader">
-
+            
             <div class="element-animation">
-                <img src="img/preloader.png" width="480" height="100" ;>
+                <img src="<?=assets_url()?>img/preloader.png" width="480" height="100" ;>
             </div>
         </div>
         <ul class="labels">
-            <li class="label">Gin</li>
+        <li class="label">Gin</li>
             <li class="label">Campari</li>
             <li class="label">Vermouth Rosso</li>
             <li class="label">Rodaja de Naranja</li>
         </ul>
         <div class="loader-section section-left"></div>
         <div class="loader-section section-right"></div>
-    </div> -->
+    </div>
 
     <header>
         <!-- Fixed navbar -->
         <nav class="navbar navbar-expand-md fixed-top">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <img src="img/menu.svg" alt="">
+                <img src="<?=assets_url()?>img/menu.svg" alt="">
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul id="menu" class="navbar-nav">
+                <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#title">Corto </a>
+                        <a class="nav-link" href="#title">Corto</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#slide1">Actores</a>
@@ -88,8 +97,7 @@
 
         <div id="title" class="slide contenedores">
             <div class="container">
-                <img class="logo" src="img/logo_w.png" alt="">
-
+                <img class="logo" src="<?=assets_url()?>img/logo_w.png" alt="">
                 <div class="train">
                     <div class="title-short">
                         <h3 class="name">ENTERING RED</h3>
@@ -109,15 +117,12 @@
                     <div id="cortos" class="false-button f-1 pt-5">
                         <button type="button" class="btn video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/xC93AYiC4kQ"
                             data-target="#videoModal">
-                            <img src="img/play.svg" alt="">
+                            <img src="<?=assets_url()?>img/play.svg" alt="">
                         </button>
                     </div>
                 </div>
 
-
-
-
-                <img src="img/bottles.png" alt="">
+                <img src="<?=assets_url()?>img/bottles.png" alt="">
             </div>
 
         </div>
@@ -128,15 +133,15 @@
                     <h3>ACTORES</h3>
                 </div>
                 <div class="row mx-auto w-100">
-
+                    
                     <div class="col-12">
                         <div class="actores reverse">
                             <div class="character a-2">
                                 <button type="button" class="btn video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/CW8cPYRWALM"
                                     data-target="#videoModal">
-                                    <img src="img/play.png" alt="">
+                                    <img src="<?=assets_url()?>img/play.png" alt="">
                                 </button>
-                                <img class="sub" src="img/pachano_sub.png" alt="">
+                                <img class="sub" src="<?=assets_url()?>img/pachano_sub.png" alt="">
                             </div>
                             <div class="description">
                                 <div class="name">
@@ -144,7 +149,7 @@
                                     <h6>ACTRIZ/INFLUENCER</h6>
                                     <p>Sofía es una actriz, chef y lifestyle influencer. Es una apasionada del mundo de
                                         la coctelería, la moda y los viajes.
-                                        Ama la moda y la cultura gastronómica y coctelera italiana, y es muy cercana a
+                                        Ama la cultura gastronómica y coctelera italiana, y es muy cercana a
                                         la comunidad de bartenders.</p>
                                 </div>
                                 <ul class="redes">
@@ -159,17 +164,15 @@
                             <div class="character a-1">
                                 <button type="button" class="btn video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/9h56hlHWBFk"
                                     data-target="#videoModal">
-                                    <img src="img/play.png" alt="">
+                                    <img src="<?=assets_url()?>img/play.png" alt="">
                                 </button>
-                                <img class="sub" src="img/seba_sub.png" alt="">
+                                <img class="sub" src="<?=assets_url()?>img/seba_sub.png" alt="">
                             </div>
                             <div class="description">
                                 <div class="name">
                                     <h3>SEBA GARCÍA</h3>
                                     <h6>BARTENDER</h6>
-                                    <p>Seba es un joven bartender, manager de Presidente Bar y amante de los cocktails
-                                        clásicos. Es uno de los más destacados de la nueva generación de bartenders en
-                                        Argentina.</p>
+                                    <p>Seba es un joven bartender, manager de Presidente Bar y amante de los cocktails clásicos. Es uno de los más destacados de la nueva generación de bartenders en Argentina.</p>
                                 </div>
                                 <ul class="redes">
                                     <!-- <li><a target="_blank" href=""><i class="fab fa-facebook-f"></i></a></li> -->
@@ -178,7 +181,7 @@
                             </div>
                         </div>
                     </div>
-
+                    
                 </div>
             </div>
             <div class="gallery">
@@ -186,50 +189,50 @@
                 <div class="loop owl-carousel">
                     <div class="item">
                         <div class="overlay h-100 w-100"></div>
-                        <img src="img/gallery/gallery_1.jpg" alt="">
+                        <img src="<?=assets_url()?>img/gallery/gallery_1.jpg" alt="">
                     </div>
                     <div class="item">
                         <div class="overlay h-100 w-100"></div>
-                        <img src="img/gallery/gallery_2.jpg" alt="">
+                        <img src="<?=assets_url()?>img/gallery/gallery_2.jpg" alt="">
                     </div>
-
+                    
                     <div class="item">
                         <div class="overlay h-100 w-100"></div>
-                        <img src="img/gallery/gallery_4.jpg" alt="">
-                    </div>
-                    <div class="item">
-                        <div class="overlay h-100 w-100"></div>
-                        <img src="img/gallery/gallery_5.jpg" alt="">
+                        <img src="<?=assets_url()?>img/gallery/gallery_4.jpg" alt="">
                     </div>
                     <div class="item">
                         <div class="overlay h-100 w-100"></div>
-                        <img src="img/gallery/gallery_6.jpg" alt="">
+                        <img src="<?=assets_url()?>img/gallery/gallery_5.jpg" alt="">
                     </div>
                     <div class="item">
                         <div class="overlay h-100 w-100"></div>
-                        <img src="img/gallery/gallery_7.jpg" alt="">
+                        <img src="<?=assets_url()?>img/gallery/gallery_6.jpg" alt="">
                     </div>
                     <div class="item">
                         <div class="overlay h-100 w-100"></div>
-                        <img src="img/gallery/gallery_8.jpg" alt="">
+                        <img src="<?=assets_url()?>img/gallery/gallery_7.jpg" alt="">
                     </div>
                     <div class="item">
                         <div class="overlay h-100 w-100"></div>
-                        <img src="img/gallery/gallery_9.jpg" alt="">
+                        <img src="<?=assets_url()?>img/gallery/gallery_8.jpg" alt="">
                     </div>
                     <div class="item">
                         <div class="overlay h-100 w-100"></div>
-                        <img src="img/gallery/gallery_10.jpg" alt="">
+                        <img src="<?=assets_url()?>img/gallery/gallery_9.jpg" alt="">
                     </div>
                     <div class="item">
                         <div class="overlay h-100 w-100"></div>
-                        <img src="img/gallery/gallery_11.jpg" alt="">
+                        <img src="<?=assets_url()?>img/gallery/gallery_10.jpg" alt="">
                     </div>
                     <div class="item">
                         <div class="overlay h-100 w-100"></div>
-                        <img src="img/gallery/gallery_12.jpg" alt="">
+                        <img src="<?=assets_url()?>img/gallery/gallery_11.jpg" alt="">
                     </div>
-
+                    <div class="item">
+                        <div class="overlay h-100 w-100"></div>
+                        <img src="<?=assets_url()?>img/gallery/gallery_12.jpg" alt="">
+                    </div>
+                    
 
                 </div>
             </div>
@@ -250,7 +253,7 @@
                         <div class="behind b-3">
                             <button type="button" class="btn video-btn animated " data-toggle="modal" data-src="https://www.youtube.com/embed/NvdWLSBQg-g"
                                 data-target="#videoModal">
-                                <img src="img/play.png" alt="">
+                                <img src="<?=assets_url()?>img/play.png" alt="">
                             </button>
                             <div class="overlay"></div>
                         </div>
@@ -259,112 +262,69 @@
                         <div class="behind b-2">
                             <button type="button" class="btn video-btn animated " data-toggle="modal" data-src="https://www.youtube.com/embed/XOVr8405gC4"
                                 data-target="#videoModal">
-                                <img src="img/play.png" alt="">
+                                <img src="<?=assets_url()?>img/play.png" alt="">
                             </button>
                             <div class="overlay"></div>
                         </div>
                         <div class="behind b-1">
                             <button type="button" class="btn video-btn animated " data-toggle="modal" data-src="https://www.youtube.com/embed/Y_JbM4_AxUs"
                                 data-target="#videoModal">
-                                <img src="img/play.png" alt="">
+                                <img src="<?=assets_url()?>img/play.png" alt="">
                             </button>
                             <div class="overlay"></div>
                         </div>
                     </div>
                 </div>
-
-
+                
+                
             </div>
         </div>
 
         <div id="slide3" class="slide">
             <div class="title-section vertical">
                 <h3 class="text-white">RED HANDS 2019 <br> Cocktails y Bartenders</h3>
-                <!-- <h3 class="text-white"></h3> -->
             </div>
             <div class="container p-0">
                 <div class="cocktails">
-                    <ul class="tab-header nav nav-tabs" role="tablist">
+                    <ul id="menu" class="tab-header nav nav-tabs" role="tablist">
                         <li role="presentation">
-                            <a href="#seba" aria-controls="#seba" role="tab" data-toggle="tab" class="active">
-                                <img src="img/cocktail_2.png" alt="">
-                            </a>
-                        </li>
+                                <a href="#seba" aria-controls="#seba" role="tab" class="active" data-toggle="tab">
+                                    <img src="<?=assets_url()?>img/cocktail_2.png" alt="">
+                                </a>
+                            </li>
                         <li role="presentation">
                             <a href="#andreas" aria-controls="#andreas" role="tab" data-toggle="tab">
-                                <img src="img/cocktail_1.png" alt="">
+                                <img src="<?=assets_url()?>img/cocktail_1.png" alt="">
                             </a>
                         </li>
-
+                        
                         <li role="presentation">
                             <a href="#jessica" aria-controls="#jessica" role="tab" data-toggle="tab">
-                                <img src="img/cocktail_3.png" alt="">
+                                <img src="<?=assets_url()?>img/cocktail_3.png" alt="">
                             </a>
                         </li>
                         <li role="presentation">
                             <a href="#joe" aria-controls="#joe" role="tab" data-toggle="tab">
-                                <img src="img/cocktail_4.png" alt="">
+                                <img src="<?=assets_url()?>img/cocktail_4.png" alt="">
                             </a>
                         </li>
                         <li role="presentation">
                             <a href="#stacy" aria-controls="#stacy" role="tab" data-toggle="tab">
-                                <img src="img/cocktail_5.png" alt="">
+                                <img src="<?=assets_url()?>img/cocktail_5.png" alt="">
                             </a>
                         </li>
                         <li role="presentation">
                             <a href="#tomasso" aria-controls="#tomasso" role="tab" data-toggle="tab">
-                                <img src="img/cocktail_6.png" alt="">
+                                <img src="<?=assets_url()?>img/cocktail_6.png" alt="">
                             </a>
                         </li>
                     </ul>
                     <div class="tab-content">
-                        <div role="tabpanel" class="tab-pane active" id="seba">
+                        <div role="tabpanel" class="tab-pane " id="andreas">
                             <div class="row mx-auto w-100">
                                 <div class="col-12 col-lg-4 p-0">
                                     <div class="trago">
-                                        <img src="img/bartenders/campari_seba_bianco_a_cut.png" alt="">
-                                        <h6 class="text-white">PRESIDENTE NEGRONI</h6>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-lg-8 p-0">
-                                    <div class="bartender">
-                                        <div class="foto">
-                                            <div class="owl-carousel owl-bartenders owl-theme">
-                                                <div class="item" style="background-image:url('img/bartenders/seba_a.jpg')">
-                                                </div>
-                                                <div class="item" style="background-image:url('img/bartenders/seba_b.jpg')">
-                                                </div>
-                                                <div class="item" style="background-image:url('img/bartenders/seba_c.jpg')">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="bartender-txt">
-                                            <h3 class="name text-white">SEBA GARCIA</h3>
-                                            <p class="paragraph text-white">“Un cóctel debe ser elegante, como un
-                                                presidente. Debe tener estilo. Debe emanar la fuerza de un ...
-                                                Presidente.”</p>
-                                            <ul class="ingredientes p-0 text-white">
-                                                <h5 class="text-white">Ingredientes</h5>
-                                                <li>30 ml Campari</li>
-                                                <li>30 ml Barrel Aged Genever</li>
-                                                <li>15 ml Medium Sherry</li>
-                                                <li>15 ml Barolo Chinato</li>
-                                            </ul>
-                                            <h5 class="text-white">Sabor</h5>
-                                            <p class="paragraph text-white">
-                                                Cítricos y hierbas.
-                                            </p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div role="tabpanel" class="tab-pane" id="andreas">
-                            <div class="row mx-auto w-100">
-                                <div class="col-12 col-lg-4 p-0">
-                                    <div class="trago">
-                                        <img src="img/bartenders/campari_andreas_a_cut.png" alt="">
+                                        <img src="<?=assets_url()?>img/bartenders/campari_andreas_a_cut.png" alt="">
                                         <h6 class="text-white">NEGRONI 1808</h6>
                                     </div>
                                 </div>
@@ -372,11 +332,11 @@
                                     <div class="bartender">
                                         <div class="foto">
                                             <div class="owl-carousel owl-bartenders owl-theme">
-                                                <div class="item" style="background-image:url('img/bartenders/andreas_a.jpg')">
+                                                <div class="item" style="background-image:url('<?=assets_url()?>img/bartenders/andreas_a.jpg')">
                                                 </div>
-                                                <div class="item" style="background-image:url('img/bartenders/andreas_b.jpg')">
+                                                <div class="item" style="background-image:url('<?=assets_url()?>img/bartenders/andreas_b.jpg')">
                                                 </div>
-                                                <div class="item" style="background-image:url('img/bartenders/andreas_c.jpg')">
+                                                <div class="item" style="background-image:url('<?=assets_url()?>img/bartenders/andreas_c.jpg')">
                                                 </div>
                                             </div>
                                         </div>
@@ -410,7 +370,7 @@
                             <div class="row mx-auto w-100">
                                 <div class="col-12 col-lg-4 p-0">
                                     <div class="trago">
-                                        <img src="img/bartenders/campari_tommaso_bianco_d_cut.png" alt="">
+                                        <img src="<?=assets_url()?>img/bartenders/campari_tommaso_bianco_d_cut.png" alt="">
                                         <h6 class="text-white">L’AGE D’OR NEGRONI</h6>
                                     </div>
                                 </div>
@@ -418,11 +378,11 @@
                                     <div class="bartender">
                                         <div class="foto">
                                             <div class="owl-carousel owl-bartenders owl-theme">
-                                                <div class="item" style="background-image:url('img/bartenders/tommaso_a.jpg')">
+                                                <div class="item" style="background-image:url('<?=assets_url()?>img/bartenders/tommaso_a.jpg')">
                                                 </div>
-                                                <div class="item" style="background-image:url('img/bartenders/tommaso_b.jpg')">
+                                                <div class="item" style="background-image:url('<?=assets_url()?>img/bartenders/tommaso_b.jpg')">
                                                 </div>
-                                                <div class="item" style="background-image:url('img/bartenders/tommaso_c.jpg')">
+                                                <div class="item" style="background-image:url('<?=assets_url()?>img/bartenders/tommaso_c.jpg')">
                                                 </div>
                                             </div>
                                         </div>
@@ -434,10 +394,10 @@
                                                 cada una capaz de contener una de las muchas facetas de los Negroni.”</p>
                                             <ul class="ingredientes p-0 text-white">
                                                 <h5 class="text-white">Ingredientes</h5>
-                                                <li>4 ml Campari</li>
-                                                <li>4 ml Bulldog Gin</li>
-                                                <li>2 ml Cinzano 1757 Vermouth Rosso</li>
-                                                <li>2 ml Grand Marnier Cuvée Louis Alexandre</li>
+                                                <li>40 ml Campari</li>
+                                                <li>40 ml Bulldog Gin</li>
+                                                <li>20 ml Cinzano 1757 Vermouth Rosso</li>
+                                                <li>20 ml Grand Marnier Cuvée Louis Alexandre</li>
                                                 <li>Gotas de incienso y extracto de mirra.</li>
                                             </ul>
                                             <h5 class="text-white">Sabor</h5>
@@ -456,7 +416,7 @@
                             <div class="row mx-auto w-100">
                                 <div class="col-12 col-lg-4 p-0">
                                     <div class="trago">
-                                        <img src="img/bartenders/campari_jessica_cut.png" alt="">
+                                        <img src="<?=assets_url()?>img/bartenders/campari_jessica_cut.png" alt="">
                                         <h6 class="text-white">DON'T KILL MY VIBE</h6>
                                     </div>
                                 </div>
@@ -464,11 +424,11 @@
                                     <div class="bartender">
                                         <div class="foto">
                                             <div class="owl-carousel owl-bartenders owl-theme">
-                                                <div class="item" style="background-image:url('img/bartenders/jessica_a.jpg')">
+                                                <div class="item" style="background-image:url('<?=assets_url()?>img/bartenders/jessica_a.jpg')">
                                                 </div>
-                                                <div class="item" style="background-image:url('img/bartenders/jessica_b.jpg')">
+                                                <div class="item" style="background-image:url('<?=assets_url()?>img/bartenders/jessica_b.jpg')">
                                                 </div>
-                                                <div class="item" style="background-image:url('img/bartenders/jessica_c.jpg')">
+                                                <div class="item" style="background-image:url('<?=assets_url()?>img/bartenders/jessica_c.jpg')">
                                                 </div>
                                             </div>
                                         </div>
@@ -497,7 +457,7 @@
                             <div class="row mx-auto w-100">
                                 <div class="col-12 col-lg-4 p-0">
                                     <div class="trago">
-                                        <img src="img/bartenders/campari_joe_cocktail_bianco_c_cut.png" alt="">
+                                        <img src="<?=assets_url()?>img/bartenders/campari_joe_cocktail_bianco_c_cut.png" alt="">
                                         <h6 class="text-white">NEGRONI SEGRETO</h6>
                                     </div>
                                 </div>
@@ -505,11 +465,11 @@
                                     <div class="bartender">
                                         <div class="foto">
                                             <div class="owl-carousel owl-bartenders owl-theme">
-                                                <div class="item" style="background-image:url('img/bartenders/joe_a.jpg')">
+                                                <div class="item" style="background-image:url('<?=assets_url()?>img/bartenders/joe_a.jpg')">
                                                 </div>
-                                                <div class="item" style="background-image:url('img/bartenders/joe_b.jpg')">
+                                                <div class="item" style="background-image:url('<?=assets_url()?>img/bartenders/joe_b.jpg')">
                                                 </div>
-                                                <div class="item" style="background-image:url('img/bartenders/joe_c.jpg')">
+                                                <div class="item" style="background-image:url('<?=assets_url()?>img/bartenders/joe_c.jpg')">
                                                 </div>
                                             </div>
                                         </div>
@@ -520,7 +480,7 @@
                                                 sorprendiéndolos con sabores inesperados.”</p>
                                             <ul class="ingredientes p-0 text-white">
                                                 <h5 class="text-white">Ingredientes</h5>
-                                                <li>2.5 ml Bulldog Gin</li>
+                                                <li>25 ml Bulldog Gin</li>
                                                 <li>25 ml Campari</li>
                                                 <li>10 ml Cinzano 1757 Vermouth Rosso</li>
                                                 <li>4 Frambuesas</li>
@@ -536,12 +496,53 @@
                                 </div>
                             </div>
                         </div>
+                        <div role="tabpanel" class="tab-pane active" id="seba">
+                            <div class="row mx-auto w-100">
+                                <div class="col-12 col-lg-4 p-0">
+                                    <div class="trago">
+                                        <img src="<?=assets_url()?>img/bartenders/campari_seba_bianco_a_cut.png" alt="">
+                                        <h6 class="text-white">PRESIDENTE NEGRONI</h6>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-8 p-0">
+                                    <div class="bartender">
+                                        <div class="foto">
+                                            <div class="owl-carousel owl-bartenders owl-theme">
+                                                <div class="item" style="background-image:url('<?=assets_url()?>img/bartenders/seba_a.jpg')">
+                                                </div>
+                                                <div class="item" style="background-image:url('<?=assets_url()?>img/bartenders/seba_b.jpg')">
+                                                </div>
+                                                <div class="item" style="background-image:url('<?=assets_url()?>img/bartenders/seba_c.jpg')">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="bartender-txt">
+                                            <h3 class="name text-white">SEBA GARCIA</h3>
+                                            <p class="paragraph text-white">“Un cockatil debe ser elegante, como un
+                                                presidente. Debe tener estilo. Debe emanar la fuerza de un ...
+                                                Presidente.”</p>
+                                            <ul class="ingredientes p-0 text-white">
+                                                <h5 class="text-white">Ingredientes</h5>
+                                                <li>30 ml Campari</li>
+                                                <li>30 ml Barrel Aged Genever</li>
+                                                <li>15 ml Medium Sherry</li>
+                                                <li>15 ml Barolo Chinato</li>
+                                            </ul>
+                                            <h5 class="text-white">Sabor</h5>
+                                            <p class="paragraph text-white">
+                                                Cítricos y hierbas.
+                                            </p>
 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div role="tabpanel" class="tab-pane " id="stacy">
                             <div class="row mx-auto w-100">
                                 <div class="col-12 col-lg-4 p-0">
                                     <div class="trago">
-                                        <img src="img/bartenders/campari_cocktail_stacey_c_cut.png" alt="">
+                                        <img src="<?=assets_url()?>img/bartenders/campari_cocktail_stacey_c_cut.png" alt="">
                                         <h6 class="text-white">GARNET SBAGLIATO</h6>
                                     </div>
                                 </div>
@@ -549,11 +550,11 @@
                                     <div class="bartender">
                                         <div class="foto">
                                             <div class="owl-carousel owl-bartenders owl-theme">
-                                                <div class="item" style="background-image:url('img/bartenders/stacey_a.jpg')">
+                                                <div class="item" style="background-image:url('<?=assets_url()?>img/bartenders/stacey_a.jpg')">
                                                 </div>
-                                                <div class="item" style="background-image:url('img/bartenders/stacey_b.jpg')">
+                                                <div class="item" style="background-image:url('<?=assets_url()?>img/bartenders/stacey_b.jpg')">
                                                 </div>
-                                                <div class="item" style="background-image:url('img/bartenders/stacey_c.jpg')">
+                                                <div class="item" style="background-image:url('<?=assets_url()?>img/bartenders/stacey_c.jpg')">
                                                 </div>
                                             </div>
                                         </div>
@@ -565,8 +566,8 @@
                                                 <h5 class="text-white">Ingredientes</h5>
                                                 <li>35 ml Campari</li>
                                                 <li>28 ml Cinzano 1757 Vermouth Rosso</li>
-                                                <li>142 ml Shrubs de Naranja Roja, Remolacha y granado</li>
-                                                <li>8 gotas de tintura De Alcaravea Tostada </li>
+                                                <li>14,2 ml shrub de naranja sanguínea, remolacha y granada</li>
+                                                <li>8 gotas de alcaravea tostada</li>
                                                 <li>3 rodajas de naranja roja</li>
                                                 <li>Lambrusco</li>
                                             </ul>
@@ -590,16 +591,16 @@
         </div>
         <footer class="f-lan">
             <div class="footer">
-                <img src="img/campari.png" alt="">
+                <img src="<?=assets_url()?>img/campari.png" alt="">
                 <p class="disclaim">Beber con moderación. <br> Prohibida su venta a menores de 18 años</p>
             </div>
-        </footer>
+        </footer >
 
 
     </div>
 
 
-
+    
 
     <!-- Button trigger modal -->
 
@@ -609,10 +610,10 @@
             <div class="modal-content">
 
                 <div class="modal-body validator">
-                    <img class="img-fluid mb-4" src="img/campari.png" alt="">
+                    <img class="img-fluid mb-4" src="<?=assets_url()?>img/campari.png" alt="">
                     <h4>SOY MAYOR DE 18 AÑOS</h4>
                     <div class="buttons mx-auto mt-3 d-flex justify-content-center">
-                        <button type="button" class="btn btn-c-out"><span><span><span>No</span></span></span></button>
+                        <button type="button" class="btn btn-c-out" onclick="javascript: es_menor();"><span><span><span>No</span></span></span></button>
                         <button type="button" class="btn btn-c-in" data-dismiss="modal"><span><span><span>Sí</span></span></span></button>
                     </div>
                 </div>
@@ -636,7 +637,7 @@
                         <iframe class="embed-responsive-item" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen"
                             oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen" id="video"
-                            allowscriptaccess="always">></iframe>
+                            allowscriptaccess="always"></iframe>
                     </div>
 
 
@@ -654,9 +655,15 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/events.js"></script>
+    <!--script src="<?=assets_url()?>js/owl.carousel.min.js"></script-->
+    <script src="<?=assets_url()?>js/owl.carousel.js"></script>
+    <script src="<?=assets_url()?>js/events.js"></script>
 
+    <script>
+        function es_menor() {
+            window.location = 'http://www.google.com';
+        }
+    </script>
 
 
 </body>
